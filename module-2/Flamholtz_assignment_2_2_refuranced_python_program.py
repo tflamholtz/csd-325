@@ -5,18 +5,22 @@ def main():
     #Display intro screen
     intro()
 
-    #try:
-    #Get the number of gallons
-    gallons = float(input("Enter the number of gallons"))
+    try:
+        #Get the number of gallons
+        gallons = float(input("Enter the number of gallons"))
 
-    #Convert the gallons to liters
-    gallons_to_liters(gallon)
+        #Convert the gallons to liters
+        gallons_to_liters(gallons)
+    except ValueError:
+        print("An exception occurred, try again by entering only a number")
+        print()
+        main()
 
 
-    #except:
-        #print("An exception occured, try again by entering only a number")
-        #print()
-        #main()
+    except:
+        print("An exception occured, try again by entering only a number")
+        print()
+        main()
 
 
     #The intro function displays an introductory screen
