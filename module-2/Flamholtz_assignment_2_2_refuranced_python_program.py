@@ -7,7 +7,7 @@ def main():
 
     try:
         #Get the number of gallons
-        gallons = float(input("Enter the number of gallons"))
+        gallons = float(input("Enter the number of gallons :"))
 
         #Convert the gallons to liters
         gallons_to_liters(gallons)
